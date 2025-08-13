@@ -30,7 +30,7 @@ public class WebSocketMessageBrokerConfig implements WebSocketMessageBrokerConfi
 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-        registry.addEndpoint(ENDPOINT) // 웹소켓에 연결할 endpoint 설정. 최초 연결시 "ws://localhost:8080/ws-stomp 로 연결"
+        registry.addEndpoint(ENDPOINT) // 웹소켓에 연결할 endpoint 설정.
                 .setAllowedOriginPatterns(securityProperty.getAllowOrigins())
                 .withSockJS()
         ;
