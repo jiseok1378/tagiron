@@ -1,4 +1,4 @@
-package com.game.tagiron.auth;
+package com.game.tagiron.auth.controller;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

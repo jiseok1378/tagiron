@@ -31,6 +31,12 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-websocket'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+    annotationProcessor("org.mapstruct:mapstruct-processor:1.5.3.Final")
+    testAnnotationProcessor("org.mapstruct:mapstruct-processor:1.5.3.Final")
+    implementation("org.mapstruct:mapstruct:1.5.3.Final")
+    implementation("org.projectlombok:lombok-mapstruct-binding:0.2.0")
+
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.h2database:h2'
     runtimeOnly 'org.postgresql:postgresql'

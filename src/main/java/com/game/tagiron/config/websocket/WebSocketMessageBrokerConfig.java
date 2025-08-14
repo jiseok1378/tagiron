@@ -34,7 +34,6 @@ public class WebSocketMessageBrokerConfig implements WebSocketMessageBrokerConfi
                 .setAllowedOriginPatterns(securityProperty.getAllowOrigins())
                 .withSockJS()
         ;
-
     }
 
     @Override
